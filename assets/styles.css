@@ -85,6 +85,16 @@ opacity: 0.8;
     margin: 45px 0;
     cursor: pointer;
 }
+#home button:hover{
+    color: #ffffff91;
+    width: 135px;
+    height: 42px;
+    border: 2px solid #ffffff91;
+    background-color: rgba(0, 0, 0, 0.46);
+    opacity: 1;
+    margin: 45px 0;
+    cursor: pointer;
+}
 #home .form-wrap{
     background-color: white;
     font-family: 'Montserrat';
@@ -120,4 +130,16 @@ opacity: 0.8;
     font-family: 'Montserrat';
     padding-bottom: 4px;
     padding-left: 10px;
+}
+@media (min-width: 1024px){
+section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 75px 40px 140px 40px;
+}
+section .text {
+    margin-right: 90px;
+}
 }
