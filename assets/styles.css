@@ -141,5 +141,7 @@ section {
 }
 section .text {
     margin-right: 90px;
+    display: flex;
+    flex-direction: column;
 }
 }
