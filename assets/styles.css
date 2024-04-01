@@ -300,18 +300,47 @@ section:nth-of-type(3) {
     background-blend-mode: normal;
     padding: 20px 0 85px 0;
 }
-
+section:nth-of-type(3) .features-button-wrapper{
+    display: flex;
+    
+}
+section:nth-of-type(3) .features-button-wrapper .features-button {
+    width: 100px;
+    height: 100px;
+    background-color: #A37169;  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    margin-right: 21px;
+}
+section:nth-of-type(3) .features-button-wrapper .features-button-active {
+    background-color: #E27866;
+}
+section:nth-of-type(3) .features-button-wrapper .features-button span {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    transform: rotate(315deg);
+    opacity: 0.5;
+}
 section:nth-of-type(4) {
     background-color: #1C1C1C;
-    ;
     display: flex;
-
     justify-content: center;
     padding: 90px 20px;
     color: white;
 }
 section:nth-of-type(4) .logo{
     display: none;
+}
+section:nth-of-type(4) .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 470px;
 }
 section:nth-of-type(4) .wrapper .header-line-text {
     margin-bottom: 40px;
@@ -361,6 +390,14 @@ section:nth-of-type(4) .wrapper .text-wrap .text-wrap-column .text-wrap-column-i
 }
 section:nth-of-type(5) {
     padding: 100px 20px 0 20px;
+}
+section:nth-of-type(5) .header-line-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 65px;
+    text-align: center;
+
 }
 section:nth-of-type(5) .header-line-text h1 {
     font-size: 36px;
@@ -446,27 +483,6 @@ section:nth-of-type(2) {
 }
 section:nth-of-type(3) {
     padding: 126px 0 126px 0;
-}
-section:nth-of-type(3) .features-button-wrapper .features-button {
-    width: 100px;
-    height: 100px;
-    background-color: #A37169;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-}
-section:nth-of-type(3) .features-button-wrapper .features-button-active {
-    background-color: #E27866;
-}
-section:nth-of-type(3) .features-button-wrapper .features-button span {
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    transform: rotate(315deg);
-    opacity: 0.5;
 }
 section:nth-of-type(4){
    
