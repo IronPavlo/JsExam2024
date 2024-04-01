@@ -119,9 +119,9 @@ opacity: 0.8;
     border: none;
 }
 
-.form-wrap form fieldset .trialSignUp {
+.form-wrap form fieldset .fieldTop {
         font-size: 16px;
-        font-weight: 600;
+        font-weight: bold;
         margin-bottom: 22px;
 }
 .form-wrap form fieldset input {
@@ -130,6 +130,74 @@ opacity: 0.8;
     font-family: 'Montserrat';
     padding-bottom: 4px;
     padding-left: 10px;
+}
+.form-wrap form input[type=submit] {
+    background-color: #41D395;
+    border: none;
+    width: 360px;
+    height: 57px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+    flex-direction: column;
+    align-items: center;
+}
+fieldset:first-of-type .fieldTop{
+    margin-top: 30px;
+}
+.form-wrap h1 span {
+    color: #E27866;
+}
+.form-wrap form fieldset .input-wrap {
+    display: flex;
+    justify-content: left;
+}
+.form-wrap form fieldset input[type=radio] {
+    display: none;
+}
+fieldset {
+    width: 250px;
+}
+.form-wrap form fieldset label .radio-button {
+    background-color: white;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 1px solid #41D395;
+    margin-right: 5px;
+    position: relative;
+}
+.form-wrap form fieldset label {
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 9px;
+    margin-bottom: 42px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+}
+.form-wrap form fieldset input[type=text], .form-wrap form fieldset input[type=tel] {
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    font-size: 12px;
+    width: 240px;
+}
+
+.form-wrap form fieldset label span {
+    margin-right: 17px;
 }
 @media (min-width: 1024px){
 section {
