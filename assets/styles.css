@@ -15,15 +15,19 @@ align-items: center;
 nav{
     z-index: 2;
     position: fixed;
-    height: 72px;
+    height: 60px;
     width: 100%;
     left: 0;
     background-color: #1C1C1C;
     padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 nav .navIn{  
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1100px;
     width: 100%;
@@ -627,7 +631,9 @@ footer p {
     
     }   
 @media (min-width: 1024px){
-
+nav {
+    padding: 0 40px;
+}
 section:nth-of-type(1) {
 
     display: flex;
