@@ -11,166 +11,421 @@
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
-    <nav id="navbar">
-      <div class="navIn">
-        <a href="#home" class="logo">
+    <main>
+      <nav id="navbar">
+        <div class="navIn">
+          <a href="#home" class="logo">
+            <div class="logo">
+              <img
+                src="./assets/images/cheshire-county-hygiene-services.png"
+                alt=""
+              />
+            </div>
+          </a>
+          <div class="burger">
+            <div id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="menu-wrap">
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#about1">About</a></li>
+              <li><a href="#priceing">Pricing</a></li>
+              <li><a href="#review">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="home">
+        <div class="text">
           <div class="logo">
             <img
-              src="./assets/images/cheshire-county-hygiene-services.png"
+              src="./assets/images/cheshire-county-hygiene-services@2x.png"
               alt=""
             />
           </div>
-        </a>
-        <div class="burger">
-          <div id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="h1-line-txt">
+            <h1>
+              Explained propriety
+              <br />
+              of out perpetual to you
+            </h1>
+            <div class="line"></div>
+            <p>
+              Insipidity the sufficient discretion imprudence resolution sir him
+              decisively. Proceed how any engaged visitor. Explained propriety
+              of out perpetual his you. Feel sold off felt nay rose met you. We
+              so entreaties cultivated astonished is.
+            </p>
           </div>
+          <button>DOWNLOAD</button>
         </div>
-        <div class="menu-wrap">
-          <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#about1">About</a></li>
-            <li><a href="#priceing">Pricing</a></li>
-            <li><a href="#review">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section id="home">
-      <div class="text">
-        <div class="logo">
-          <img
-            src="./assets/images/cheshire-county-hygiene-services@2x.png"
-            alt=""
-          />
-        </div>
-        <div class="h1-line-txt">
+
+        <div class="form-wrap">
           <h1>
-            Explained propriety
-            <br />
-            of out perpetual to you
+            Try Your
+            <span>FREE</span>
+            Trial Today
           </h1>
-          <div class="line"></div>
-          <p>
-            Insipidity the sufficient discretion imprudence resolution sir him
-            decisively. Proceed how any engaged visitor. Explained propriety of
-            out perpetual his you. Feel sold off felt nay rose met you. We so
-            entreaties cultivated astonished is.
-          </p>
+          <form action name="trialSignUp">
+            <fieldset>
+              <div class="fieldTop">Your details</div>
+              <input
+                type="text"
+                name="name"
+                placeholder="First Name"
+                required=""
+              />
+              <br />
+              <input
+                type="text"
+                name="surname"
+                placeholder="Last Name"
+                required=""
+              />
+              <br />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required=""
+              />
+            </fieldset>
+            <fieldset>
+              <div class="fieldTop">Type of Subscription</div>
+
+              <div class="input-wrap">
+                <input
+                  id="radioMonthly"
+                  class="radio-button-input"
+                  type="radio"
+                  name="subscription"
+                  value="monthly"
+                  checked=""
+                />
+                <br />
+                <label class="radio-button-label" for="radioMonthly">
+                  <div class="radio-button"></div>
+                  <span>MONTHLY</span>
+                </label>
+                <br />
+                <input
+                  id="radioYearly"
+                  class="radio-button-input"
+                  type="radio"
+                  name="subscription"
+                  value="yearly"
+                />
+                <label class="radio-button-label" for="radioYearly">
+                  <div class="radio-button"></div>
+                  <span>YEARLY</span>
+                </label>
+              </div>
+            </fieldset>
+            <input
+              id="getStarted"
+              type="submit"
+              name="Submit"
+              value="GET STARTED"
+            />
+          </form>
         </div>
-        <button>DOWNLOAD</button>
-      </div>
-
-      <div class="form-wrap">
-        <h1>
-          Try Your
-          <span>FREE</span>
-          Trial Today
-        </h1>
-        <form action name="trialSignUp">
-          <fieldset>
-            <div class="fieldTop">Your details</div>
-            <input
-              type="text"
-              name="name"
-              placeholder="First Name"
-              required=""
-            />
-            <br />
-            <input
-              type="text"
-              name="surname"
-              placeholder="Last Name"
-              required=""
-            />
-            <br />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              required=""
-            />
-          </fieldset>
-          <fieldset>
-            <div class="fieldTop">Type of Subscription</div>
-
-            <div class="input-wrap">
-              <input
-                id="radioMonthly"
-                class="radio-button-input"
-                type="radio"
-                name="subscription"
-                value="monthly"
-                checked=""
-              />
-              <br />
-              <label class="radio-button-label" for="radioMonthly">
-                <div class="radio-button"></div>
-                <span>MONTHLY</span>
-              </label>
-              <br />
-              <input
-                id="radioYearly"
-                class="radio-button-input"
-                type="radio"
-                name="subscription"
-                value="yearly"
-              />
-              <label class="radio-button-label" for="radioYearly">
-                <div class="radio-button"></div>
-                <span>YEARLY</span>
-              </label>
+      </section>
+      <section id="sMediaBar">
+        <div class="wrapper">
+          <div class="text">
+            <h2>Social Media</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+          </div>
+          <div class="media-icon-wrapper">
+            <div class="media-icon">
+              <img src="./assets/images/facebook-logo.svg" alt="" />
             </div>
-          </fieldset>
-          <input
-            id="getStarted"
-            type="submit"
-            name="Submit"
-            value="GET STARTED"
-          />
-        </form>
-      </div>
-    </section>
-    <section id="sMediaBar">
-      <div class="wrapper">
-        <div class="text">
-          <h2>Social Media</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            euismod bibendum laoreet.
-          </p>
-        </div>
-        <div class="media-icon-wrapper">
-          <div class="media-icon">
-            <img src="./assets/images/facebook-logo.svg" alt="" />
-          </div>
-          <div class="media-icon">
-            <img src="./assets/images/instagram-logo.svg" alt="" />
-          </div>
-          <div class="media-icon">
-            <img src="./assets/images/twitter-logo.svg" alt="" />
-          </div>
-          <div class="media-icon">
-            <img src="./assets/images/pinterest-logo.svg" alt="" />
-          </div>
-          <div class="media-icon">
-            <img src="./assets/images/wi-fi-logo.svg" alt="" />
+            <div class="media-icon">
+              <img src="./assets/images/instagram-logo.svg" alt="" />
+            </div>
+            <div class="media-icon">
+              <img src="./assets/images/twitter-logo.svg" alt="" />
+            </div>
+            <div class="media-icon">
+              <img src="./assets/images/pinterest-logo.svg" alt="" />
+            </div>
+            <div class="media-icon">
+              <img src="./assets/images/wi-fi-logo.svg" alt="" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="features"></section>
-    <section id="about1"></section>
-    <section id="about2"></section>
-    <section id="priceing"></section>
-    <section id="review"></section>
-    <section id="contact"></section>
-    <footer></footer>
+      </section>
+      <section id="features">
+        <div class="features-button-wrapper">
+          <div class="features-button features-button-active" index="0">
+            <span>REGISTER</span>
+          </div>
+          <div class="features-button" index="1">
+            <span>APPLY</span>
+          </div>
+          <div class="features-button" index="2">
+            <span>RECEIVE</span>
+          </div>
+        </div>
+        <div class="PLACEHOLDER">PLACEHOLDER</div>
+      </section>
+      <section id="about1">
+        <img
+          class="logo"
+          src="./assets/images/cheshire-county-hygiene-services.svg"
+          alt=""
+        />
+        <div class="wrapper">
+          <div class="header-line-text">
+            <h1>Erat tempor tempus erat malesuada</h1>
+            <div class="line"></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo.
+            </p>
+          </div>
 
+          <div class="text-wrap">
+            <div class="text-wrap-column">
+              <div class="text-wrap-column-icon">
+                <svg
+                  fill="#ffffff"
+                  width="50px"
+                  height="50px"
+                  viewBox="-6.4 -6.4 28.80 28.80"
+                  xmlns="http://www.w3.org/2000/svg"
+                  transform="rotate(0)"
+                >
+                  <g
+                    id="SVGRepo_bgCarrier"
+                    stroke-#ffffffidth="0"
+                    trans#fffffform="translate(0,0), scale(1)"
+                    transform="translate(0,0), scale(1)"
+                  >
+                    <rect
+                      x="-6.4"
+                      y="-6.4"
+                      width="28.80"
+                      height="28.80"
+                      rx="14.4"
+                      fill="#E27866"
+                      strokewidth="0"
+                    ></rect>
+                  </g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="#CCCCCC"
+                    stroke-#ffffffidth="0.064"
+                    stroke-width="0.064"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="m15.71 7.77c-1.22-3.19-4.3-5.29-7.71-5.26-3.44-.07-6.54 2.04-7.72 5.27-.04.15-.04.3 0 .44 1.19 3.22 4.29 5.33 7.72 5.27 3.42.03 6.49-2.07 7.72-5.26.04-.15.04-.31-.01-.46zm-7.71 4.24c-2.7.1-5.18-1.51-6.2-4.01 1.01-2.51 3.49-4.11 6.2-4.01 2.69-.06 5.15 1.53 6.19 4.01-1.05 2.48-3.5 4.07-6.19 4.01zm0-6.66c-.18 0-.36.02-.53.06.26.35.4.77.4 1.21-.05 1.25-1.1 2.21-2.35 2.16-.01 0-.03 0-.04 0h-.07c.42 1.41 1.9 2.21 3.31 1.79s2.21-1.9 1.79-3.31c-.33-1.13-1.35-1.9-2.51-1.91z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="text-wrap-column-text">
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-wrap-column">
+              <div class="text-wrap-column-icon">
+                <svg
+                  height="50px"
+                  width="50px"
+                  version="1.1"
+                  id="_x32_"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="-230.4 -230.4 972.80 972.80"
+                  xml:space="preserve"
+                  fill="#ffffff"
+                  stroke="#ffffff"
+                >
+                  <g
+                    id="SVGRepo_bgCarrier"
+                    stroke-width="0"
+                    transform="translate(0,0), scale(1)"
+                  >
+                    <rect
+                      x="-230.4"
+                      y="-230.4"
+                      width="972.80"
+                      height="972.80"
+                      rx="486.4"
+                      fill="#E27866"
+                      strokewidth="0"
+                    ></rect>
+                  </g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <style type="text/css">
+                      .st0 {
+                        fill: #ffffff;
+                      }
+                    </style>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M442.539,73.946C397.7,36.018,333.59,13.863,255.205,13.881c-74.398,0-137.905,20.981-183.337,58.411 c-22.692,18.686-40.758,41.491-53.06,67.428C6.498,165.648-0.01,194.641,0,225.422c-0.018,37.214,7.777,71.586,23.511,101.577 c15,28.664,37.298,53.04,65.699,72.103c-6.715,28.269-16.148,68.67-16.148,68.689c-0.432,1.815-0.658,3.706-0.648,5.624 c-0.019,7.59,3.526,14.896,9.668,19.608l0.038,0.028l0.009,0.01c4.402,3.348,9.706,5.06,15,5.06c3.987,0,8.031-0.969,11.68-2.934 l0.367-0.188l0.357-0.216c0.01-0.01,5.069-3.01,12.856-7.618c11.671-6.903,29.435-17.407,45.291-26.745 c7.919-4.665,15.366-9.038,21.32-12.508c5.916-3.46,10.477-6.104,12.16-7.034l0.085-0.047l0.113-0.066 c22.1-12.526,39.704-14.633,53.849-14.708c58.692-0.085,121.212-11.464,171.13-42.62c24.894-15.602,46.561-36.413,61.806-63.056 c15.272-26.624,23.886-58.853,23.858-96.16C512.122,165.544,487.417,111.78,442.539,73.946z M454.709,301.24 c-8.812,15.375-20.37,28.316-34.232,39.282c-20.774,16.429-46.862,28.288-75.479,35.934c-28.598,7.664-59.642,11.088-89.792,11.078 c-18.517-0.075-44.379,3.414-72.761,19.683v-0.009c-3.14,1.749-10.128,5.822-19.345,11.219 c-13.222,7.759-30.62,18.019-45.15,26.614c3.545-15.094,7.655-32.576,10.73-45.413v-0.019c0.509-2.144,0.874-4.468,0.884-7.11 c0.037-3.724-0.922-8.266-3.075-12.046c-1.59-2.832-3.639-5.06-5.436-6.583c-2.736-2.285-4.796-3.273-5.944-3.903l-1.157-0.592 l-0.131-0.076C88.665,353.095,70.166,332.97,57.63,309.11c-12.517-23.896-19.1-51.78-19.11-83.689 c0.01-25.401,5.295-48.526,15.085-69.188c14.718-30.94,39.668-56.604,73.786-74.896c34.091-18.254,77.398-28.937,127.814-28.937 c71.276,0.019,125.933,20.031,162.45,50.952c36.47,31.025,55.702,72.799,55.824,120.864 C473.452,255.723,466.417,280.729,454.709,301.24z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="text-wrap-column-text">
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus accumsan et viverra justo commodo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about2">
+        <div class="header-line-text">
+          <h1>WHY THIS IS AWESOME</h1>
+          <div class="line"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="wrapper">
+          <div class="wrapper-item">
+            <div class="wrapper-logo">
+              <svg
+                fill="#E27866"
+                width="20px"
+                height="24px"
+                viewBox="-64 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <h2>Thoughtful Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod ibendum laoreet.
+            </p>
+          </div>
+
+          <div class="wrapper-item">
+            <div class="wrapper-logo">
+              <svg
+                fill="#E27866"
+                width="28px"
+                height="24px"
+                viewBox="-2.4 -2.4 28.80 28.80"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#E27866"
+                transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+                stroke-width="0.00024000000000000003"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#CCCCCC"
+                  stroke-width="0.672"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M22.063,8.226a7.976,7.976,0,0,0-5.521.63,10.063,10.063,0,0,0-3.986-5.687,1,1,0,0,0-1.112,0A10.072,10.072,0,0,0,7.457,8.858a7.964,7.964,0,0,0-5.521-.632,1,1,0,0,0-.732.769,10.771,10.771,0,0,0,2.481,9.149C6.036,20.781,8.873,21,11.816,21h.356c2.947,0,5.786-.219,8.14-2.855A10.764,10.764,0,0,0,22.8,8.994,1,1,0,0,0,22.063,8.226ZM12,5.245a8.36,8.36,0,0,1,2.772,4.73,9.256,9.256,0,0,0-1.089,1.017A10.3,10.3,0,0,0,12,13.515a10.345,10.345,0,0,0-1.687-2.523A9.314,9.314,0,0,0,9.227,9.98,8.362,8.362,0,0,1,12,5.245ZM10.958,18.992c-2.272-.05-4.173-.376-5.78-2.179A8.762,8.762,0,0,1,3.06,10.04a6.63,6.63,0,0,1,5.762,2.341A8.768,8.768,0,0,1,10.958,18.992Zm7.861-2.179c-1.61,1.8-3.513,2.129-5.789,2.179a8.759,8.759,0,0,1,2.138-6.61,6.808,6.808,0,0,1,5.011-2.393,5.528,5.528,0,0,1,.761.052A8.755,8.755,0,0,1,18.819,16.813Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <h2>Well Crafted</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean
+              euismod bibendum.
+            </p>
+          </div>
+
+          <div class="wrapper-item">
+            <div class="wrapper-logo">
+              <svg
+                width="28px"
+                height="25px"
+                viewBox="0 -139.5 750 750"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <path
+                      d="M0,40.0047706 C0,17.9107459 17.9143492,0 39.9919369,0 L710.008063,0 C732.095,0 750,17.9064659 750,40.0047706 L750,430.995229 C750,453.089254 732.085651,471 710.008063,471 L39.9919369,471 C17.905,471 0,453.093534 0,430.995229 L0,40.0047706 Z M524.5125,142.6875 C513.9405,138.7215 497.3765,134.4655 476.6895,134.4655 C423.9655,134.4655 386.8255,161.0165 386.5095,199.0695 C386.2125,227.1985 413.0235,242.8905 433.2635,252.2545 C454.0325,261.8495 461.0155,267.9695 460.9165,276.5375 C460.7845,289.6595 444.3305,295.6545 428.9935,295.6545 C407.6365,295.6545 396.2905,292.6875 378.7675,285.3785 L371.8915,282.2665 L364.4025,326.0905 C376.8655,331.5545 399.9115,336.2895 423.8405,336.5345 C479.9295,336.5345 516.3415,310.2875 516.7555,269.6525 C516.9565,247.3835 502.7405,230.4355 471.9565,216.4645 C453.3055,207.4085 441.8835,201.3655 442.0045,192.1955 C442.0045,184.0585 451.6725,175.3575 472.5615,175.3575 C490.0105,175.0865 502.6495,178.8915 512.4975,182.8575 L517.2795,185.1165 L524.5125,142.6875 Z M661.3395,138.0545 L620.1085,138.0545 C607.3355,138.0545 597.7775,141.5405 592.1675,154.2885 L512.9225,333.6915 L568.9535,333.6915 C568.9535,333.6915 578.1155,309.5695 580.1875,304.2735 C586.3105,304.2735 640.7415,304.3575 648.5235,304.3575 C650.1195,311.2105 655.0155,333.6915 655.0155,333.6915 L704.5275,333.6915 L661.3395,138.0545 Z M595.5425,264.2325 C599.9555,252.9535 616.8015,209.5095 616.8015,209.5095 C616.4865,210.0305 621.1815,198.1755 623.8765,190.8255 L627.4835,207.7035 C627.4835,207.7035 637.7005,254.4325 639.8355,264.2315 L595.5425,264.2315 L595.5425,264.2325 Z M277.6505,333.6295 L330.9865,333.6295 L364.3705,137.8675 L311.0115,137.8675 L277.6505,333.6295 Z M175.088482,244.366796 L156.3815,154.4165 C153.1515,142.0205 143.7835,138.3215 132.1945,137.8895 L46.1535,137.8895 L45.4725,141.9625 C66.4024534,147.029038 85.1184477,154.339743 101.520801,163.434171 L148.9595,333.4605 L205.4145,333.3955 L289.4185,138.0105 L232.8975,138.0105 L180.6575,271.5055 L175.0915,244.3765 C175.090494,244.373266 175.089488,244.370031 175.088482,244.366797 Z"
+                      id="Combined-Shape"
+                      fill="#E27866"
+                      fill-rule="nonzero"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h2>Easy to Customize</h2>
+            <p>Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+          </div>
+        </div>
+      </section>
+      <section id="priceing"></section>
+      <section id="review"></section>
+      <section id="contact"></section>
+      <footer></footer>
+    </main>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
