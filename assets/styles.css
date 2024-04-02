@@ -172,20 +172,47 @@ fieldset:first-of-type .fieldTop{
     display: flex;
     justify-content: left;
 }
-.form-wrap form fieldset input[type=radio] {
+ /* .form-wrap form fieldset input[type=radio] {
     display: none;
+}  */
+ .form-wrap form fieldset input[type=radio] {
+    appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: -1px;
+} 
+.form-wrap form fieldset input[type=radio]:checked::after{
+    content: "";
+    display: inline-block;
+    position: relative;
+    height: 13px;
+    width: 13px;
+    top: -2px;
+    right: 12px;
+    background-color: white;
+    border: 2px solid #41D395;
+    border-radius: 50%;
 }
+.form-wrap form fieldset input[type=radio]:checked::after + label>.radio-button::after{
+    background-color: #41D395;
+    position: relative;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    top: 1.5px;
+    right: 17px;
+}
+
 fieldset {
     width: 250px;
-}
-.form-wrap form fieldset label .radio-button {
-    background-color: white;
-    height: 14px;
-    width: 14px;
-    border-radius: 50%;
-    border: 1px solid #41D395;
-    margin-right: 5px;
-    position: relative;
 }
 .form-wrap form fieldset label {
     opacity: 0.5;
@@ -207,14 +234,10 @@ fieldset {
 .form-wrap form fieldset label span {
     margin-right: 17px;
 }
-nav .burger {
-    
-    box-sizing: border-box;
-    
-    display: flex;
-    
-    justify-content: center;
-    
+nav .burger {  
+    box-sizing: border-box; 
+    display: flex;  
+    justify-content: center;   
     align-items: center;
 }
 nav .burger #burger {
@@ -429,7 +452,7 @@ section:nth-of-type(5) .header-line-text .line {
 .header-line-text p {
     color: #fff;
     opacity: 0.8;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 14px;
     line-height: 23px;
 }
