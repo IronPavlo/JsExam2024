@@ -28,13 +28,13 @@ async function slideFeatureCheck(swiperWrapper, bttns) {
   let bttnsArr = Array.from(bttns);
 }
 let burger = document.getElementById("burger");
-burger.addEventListener("click", openMenu);
-async function openMenu(element) {
+burger.addEventListener("click", toggleMenu);
+async function toggleMenu(element) {
   if (menu.style.transform == "translateX(0px)") {
     menu.style.transform = "translateX(-160px)";
   } else {
     menu.style.transform = "translateX(0px)";
   }
 
-  console.log(menu.style);
+  //console.log(menu.style);
 }
