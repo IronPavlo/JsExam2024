@@ -184,15 +184,15 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="fswsl1">
               
-              Slide 1
+              <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
             
             
             
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide" id="fswsl2">Slide 2</div>
+            <div class="swiper-slide" id="fswsl3">Slide 3</div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
@@ -568,7 +568,7 @@
     <script src="./scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      let bllt=['Slide 1', 'Slide 2', 'Slide 3']
+      let bllt=['<span class="words">REGISTER</span>', '<span class="words">APPLY</span>', '<span class="words">RECIEVE</span>']
       const swiper1 = new Swiper('.swiper1', {
   // // Optional parameters
   // direction: 'horizontal',
@@ -579,9 +579,10 @@
     el: '.swiper-pagination',
     clickable:true,
     renderBullet: function (index, className) {
-          return '<span class="' + className + 'features-button' +'">' + (bllt[index]) + '</span>';
+          return '<span class="' + className + ' features-button' + ' feature-button-swipe '+ 'feature-button-swipe'+index+' ' +'">' + (bllt[index]) + '</span>';
         },
   },
+  slidesPerView: 1,
 
   // // Navigation arrows
   // navigation: {
