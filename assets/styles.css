@@ -1,9 +1,13 @@
+html {
+    scroll-behavior: smooth;
+  }
 *{
     margin: 0;
     padding: 0;
     padding-inline-start:0;
     padding-inline-end:0;
 }
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
