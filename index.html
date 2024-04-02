@@ -184,12 +184,18 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">
+              
+              Slide 1
+            
+            
+            
+            </div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
           </div>
           <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-pagination"></div>
         
           <!-- If we need navigation buttons -->
           <!-- <div class="swiper-button-prev"></div>
@@ -562,16 +568,20 @@
     <script src="./scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      let bllt=['Slide 1', 'Slide 2', 'Slide 3']
       const swiper1 = new Swiper('.swiper1', {
   // // Optional parameters
   // direction: 'horizontal',
   // loop: true,
 
   // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   clickable:true,
-  // },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+    renderBullet: function (index, className) {
+          return '<span class="' + className + 'features-button' +'">' + (bllt[index]) + '</span>';
+        },
+  },
 
   // // Navigation arrows
   // navigation: {
@@ -584,15 +594,16 @@
   //   el: '.swiper-scrollbar',
   // },
 });
-// const swiper2 = new Swiper('.swiper2', {
+const swiper2 = new Swiper('.swiper2', {
 //   // Optional parameters
 //   direction: 'horizontal',
 //   loop: true,
 
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    
+  },
 
 //   // Navigation arrows
 //   // navigation: {
@@ -604,7 +615,7 @@
 //   // scrollbar: {
 //   //   el: '.swiper-scrollbar',
 //   // },
-// });
+});
 const swiper3 = new Swiper('.swiper3', {
   // Optional parameters
   direction: 'horizontal',
