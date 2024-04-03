@@ -805,6 +805,23 @@ align-items: center;
     color: #FFFFFF;
     opacity: 1;
 }
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border:2px solid #E27866;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot.active{
+    background-color: #E27866;
+}
+.dot:hover{
+    background-color: #E27866;
+}
 @media (min-width: 600px){
 footer p {
     display: block;
