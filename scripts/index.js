@@ -2,10 +2,6 @@ let featuresBttns = document.getElementsByClassName("features-button");
 
 let features = document.getElementById("features");
 
-let swiperSlidesFeatures = features.getElementsByClassName("swiper-slide");
-
-let swiperFeatures = features.getElementsByClassName("swiper1");
-
 let allSpans = Array.from(document.getElementsByTagName("span"));
 let menu = document.getElementById("menu");
 featuresBttns[0].addEventListener("mousedown", activateFeatureBttn);
@@ -22,11 +18,8 @@ async function activateFeatureBttn(element) {
   if (!allSpans.includes(element.srcElement)) {
     element.srcElement.classList.add("features-button-active");
   }
-  //slideFeatureCheck(features, featuresBttns);
 }
-async function slideFeatureCheck(swiperWrapper, bttns) {
-  let bttnsArr = Array.from(bttns);
-}
+
 let burger = document.getElementById("burger");
 burger.addEventListener("click", toggleMenu);
 async function toggleMenu(element) {

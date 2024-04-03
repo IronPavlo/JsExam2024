@@ -28,95 +28,17 @@ align-items: center;
     max-width: 273px;
     width: 100vw;
 }
-.swiper-wrapper{
-max-height: 100%;
-height: 100%;
-display: flex;
-}
-#features .swiper1 .swiper-wrapper .swiper-slide {
-    width: auto;
-    flex-shrink: 0;
-    display: block;
-    height: 100%;
-    max-height: 100%;
-    position: absolute;
-}
-#fswsl1{
-    top: 120px;
-    
-}
-#fswsl1 h1{
-    max-width: 520px;
-}
-#fswsl2{
-    top: 120px;
-    left: 520px;
-}
-#fswsl3{
-    top: 120px;
-    left: 1040px;
+.swiper1{
+    height: auto;
+    margin: 0;
 }
 .swiper1{
-    height:400px;
-    margin: 0;
     max-width: 520px;
-    overflow: hidden; 
-   
 }
 .swiper3 {
     padding-bottom: 110px;
 }
-.feature-button-swipe{
-    position: absolute;
-}
-.swiper .swiper-pagination  .feature-button-swipe0 {
-    top: -390px;
-    z-index: 0;
-    left: 75px;
-    border-radius: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #E27866;  
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    margin-right: 21px;   
-}
-.swiper .swiper-pagination .feature-button-swipe1  {
-    top: -390px;
-    z-index: 0;
-    left: 195px;
-    border-radius: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #E27866;  
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    margin-right: 21px; 
-}
-.swiper .swiper-pagination .feature-button-swipe2 {
-    top: -390px;
-    z-index: 0;
-    left: 315px;
-    border-radius: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #E27866;  
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    margin-right: 21px;
-}
+
 nav{
     z-index: 2;
     position: fixed;
@@ -449,10 +371,9 @@ section:nth-of-type(3) {
 }
 section:nth-of-type(3) .features-button-wrapper{
     display: flex;
-    position: absolute;
+    
 }
-section:nth-of-type(3) .features-button {
-    /* z-index: 3; */
+section:nth-of-type(3) .features-button-wrapper .features-button {
     width: 100px;
     height: 100px;
     background-color: #A37169;  
@@ -464,10 +385,10 @@ section:nth-of-type(3) .features-button {
     cursor: pointer;
     margin-right: 21px;
 }
-/* section:nth-of-type(3)  .features-button-active {
+section:nth-of-type(3) .features-button-wrapper .features-button-active {
     background-color: #E27866;
-} */
-section:nth-of-type(3) .features-button span {
+}
+section:nth-of-type(3) .features-button-wrapper .features-button span {
     font-size: 14px;
     font-weight: bold;
     color: white;
@@ -700,18 +621,6 @@ footer p {
 }
 }
 @media (min-width: 768px){
-    
-    .swiper .swiper-pagination  .feature-button-swipe0{
-        top: -375px;
-        left: -2vw;
-       
-    }
-    .swiper .swiper-pagination  .feature-button-swipe1{
-
-    }
-    .swiper .swiper-pagination  .feature-button-swipe2{
-
-    }
     nav .navIn{
         padding: 0 20px;
     }
@@ -780,9 +689,8 @@ footer p {
         flex-direction: column;
         max-width: 100px;
         margin-right: 54px;
-        left: 2vw;
     }
-    section:nth-of-type(3)  .features-button {
+    section:nth-of-type(3) .features-button-wrapper .features-button {
         margin-bottom: 21px;
     }
     .swiper3 {
@@ -817,12 +725,6 @@ section:nth-of-type(2) .wrapper .text p {
 section:nth-of-type(3) {
     padding: 126px 0 126px 0;
 }
-section:nth-of-type(3) .features-button-wrapper {
-    flex-direction: column;
-    max-width: 100px;
-    margin-right: 54px;
-    left: 2vw;
-}
 section:nth-of-type(4){
    
     display: flex;
@@ -840,24 +742,6 @@ section:nth-of-type(5) .wrapper {
     justify-content: space-between;
     width: 95%;
     max-width: 1052px;
-}
-.swiper1{
-    max-width: 800px;
-}
-#fswsl1{
-    top: 120px;
-    
-}
-#fswsl1 h1{
-    max-width: 520px;
-}
-#fswsl2{
-    top: 120px;
-    left: 800px;
-}
-#fswsl3{
-    top: 120px;
-    left: 1600px;
 }
 .swiper3 {
     max-width: 939px;
