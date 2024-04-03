@@ -4,10 +4,12 @@ let features = document.getElementById("features");
 let featuresSlides = document.querySelectorAll(".features-register");
 let allSpans = Array.from(document.getElementsByTagName("span"));
 let menu = document.getElementById("menu");
+
 featuresBttns[0].addEventListener("mousedown", activateFeatureBttn);
 featuresBttns[1].addEventListener("mousedown", activateFeatureBttn);
 featuresBttns[2].addEventListener("mousedown", activateFeatureBttn);
 
+//feature button activation
 async function activateFeatureBttn(element) {
   for (let i = 0; i < featuresBttns.length; i++) {
     featuresBttns[i].classList.remove("features-button-active");
@@ -19,32 +21,22 @@ async function activateFeatureBttn(element) {
   if (allSpans.includes(element.srcElement)) {
     element.srcElement.parentElement.classList.add("features-button-active");
     //console.log(element.srcElement.parentElement.attributes.index.value);
-    if (element.srcElement.parentElement.attributes.index.value == 0) {
-      featuresSlides[0].classList.add("features-register-active");
-    }
-    if (element.srcElement.parentElement.attributes.index.value == 1) {
-      featuresSlides[1].classList.add("features-register-active");
-    }
-    if (element.srcElement.parentElement.attributes.index.value == 2) {
-      featuresSlides[2].classList.add("features-register-active");
-    }
+    activateFeatureSlides(
+      element.srcElement.parentElement.attributes.index.value
+    );
   }
 
   if (!allSpans.includes(element.srcElement)) {
     element.srcElement.classList.add("features-button-active");
     //console.log(element.srcElement.attributes.index.value);
-    if (element.srcElement.attributes.index.value == 0) {
-      featuresSlides[0].classList.add("features-register-active");
-    }
-    if (element.srcElement.attributes.index.value == 1) {
-      featuresSlides[1].classList.add("features-register-active");
-    }
-    if (element.srcElement.attributes.index.value == 2) {
-      featuresSlides[2].classList.add("features-register-active");
-    }
+    activateFeatureSlides(element.srcElement.attributes.index.value);
   }
 }
+function activateFeatureSlides(index) {
+  featuresSlides[index].classList.add("features-register-active");
+}
 
+//burger menu
 let burger = document.getElementById("burger");
 burger.addEventListener("click", toggleMenu);
 async function toggleMenu(element) {
@@ -56,6 +48,9 @@ async function toggleMenu(element) {
 
   //console.log(menu.style);
 }
+
+//Slideshow controls
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -88,3 +83,19 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "flex";
   dots[slideIndex - 1].className += " active";
 }
+
+//Custom Validation Message
+document.addEventListener("DOMContentLoaded", function () {
+  let elements = document.getElementsByTagName("input");
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].oninvalid = function (e) {
+      e.target.setCustomValidity("");
+      if (!e.target.validity.valid) {
+        e.target.setCustomValidity("This field is required");
+      }
+    };
+    elements[i].oninput = function (e) {
+      e.target.setCustomValidity("");
+    };
+  }
+});
