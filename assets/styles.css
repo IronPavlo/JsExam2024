@@ -703,8 +703,108 @@ display: none;
     opacity: 0.8;   
     transition: 0.2s ease-in-out;
 }
+#priceing .pricing-options {
+ display: flex;
+ flex-direction: column;
+ gap:40px;
+}
+#priceing .pricing-options .pricing-card{
+width: 343px;
+height: 448px;
+display: flex;
+flex-direction: column;
+align-items: center;
 
+}
+.card-header{
+    height: 59px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #333333;
+    font: normal normal normal 20px/24px Montserrat;
+    color: #FFFFFF;
+    border-radius: 5px 5px 0px 0px;
+}
+.card-price{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    color: #FFFFFF;
+    font: normal normal normal 94px/24px Montserrat;
+}
+.card-price span{
+    height: 70px;
+    display: flex;
+    font: normal normal normal 48px/24px Montserrat;
+    align-items: flex-end
+}
+.card-extra-comment{
+    height: 51px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    
+}
+.card-extra-comment span{
+    font: normal normal normal 14px/24px Montserrat;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
 
+.card-line{
+    height: 6px;
+    width: 343px;
+    background-color: #41D395;
+}
+.card-benefits{   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.card-benefits span{
+   height: 40px; 
+   width: 343px;
+   display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font: normal normal normal 14px/24px Montserrat;
+
+    color: #86878B;
+    opacity: 1;
+}
+.card-benefits{
+    border-radius: 0px 0px 5px 5px;
+}
+#priceing .pricing-options .pricing-card.most-popular{
+    height:482px
+}
+.most-popular .card-line{
+    height:40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font: normal normal normal 14px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
 @media (min-width: 600px){
 footer p {
     display: block;
@@ -834,6 +934,11 @@ section:nth-of-type(5) .wrapper {
     width: 95%;
     max-width: 1052px;
 }
+#priceing .pricing-options {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+   }
 }
 
 
