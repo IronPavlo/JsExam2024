@@ -822,6 +822,95 @@ align-items: center;
 .dot:hover{
     background-color: #E27866;
 }
+.slideshow-container{
+    max-width: 500px;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between
+}
+.review-slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: 10vw;
+}
+.review{
+    max-width: 273px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    position: relative;
+    gap: 10px;
+}
+
+.review p{
+ background-color: #6696E2;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+}
+.speech-bubble-extra{
+    
+    position: absolute;
+    bottom: 75px;
+    left: 20px;
+    width: 28px;
+    height: 28px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    background: #6696E2 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+}
+.user{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:11px;
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+.user-details h2{
+    font: normal normal normal 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+.user-details h3{
+    font: normal normal normal 14px/17px Montserrat;
+    letter-spacing: 0px;
+    color: #86878B;
+    opacity: 1;
+}
+.slidebttns{
+    display: flex;
+    margin: 20px;
+    width: 40%;
+    gap: 20px;
+    height: 50px;
+    justify-content: space-between;
+    transition: 0.4s linear;
+}
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(14, 14, 14);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
 @media (min-width: 600px){
 footer p {
     display: block;
@@ -904,7 +993,16 @@ footer p {
     section:nth-of-type(3) .features-button-wrapper .features-button {
         margin-bottom: 21px;
     }
-    
+    .review{
+        max-width: 273px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: baseline;
+        position: relative;
+        gap: 10px;
+    }
     }   
 @media (min-width: 1024px){
 nav {
@@ -956,6 +1054,24 @@ section:nth-of-type(5) .wrapper {
     flex-direction: row;
     align-items: flex-end;
    }
+.slidebttns{
+    display: flex;
+    margin: 20px;
+    width: 80%;
+    gap: 20px;
+    height: 50px;
+    justify-content: space-between
+}
+.review{
+    width: 273px;
+    height: 214px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    position: relative;
+    gap: 10px;
+}
 }
 
 
