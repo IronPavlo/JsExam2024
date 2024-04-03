@@ -17,7 +17,7 @@ async function activateFeatureBttn(element) {
   }
 
   //console.log(element.srcElement.parentElement.attributes.index.value);
-  console.log(element.srcElement);
+  //console.log(element.srcElement);
   if (allSpans.includes(element.srcElement)) {
     element.srcElement.parentElement.classList.add("features-button-active");
     //console.log(element.srcElement.parentElement.attributes.index.value);
