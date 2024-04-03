@@ -12,17 +12,11 @@ body{
     width: 100%;
    
 }
-
-
-
 main{
 display: flex;
 flex-direction: column;
 align-items: center;
 }
-
-
-
 nav{
     z-index: 2;
     position: fixed;
@@ -335,7 +329,7 @@ section:nth-of-type(2) .wrapper{
 
     align-items: center;
     width: 100%;
-    max-width: 1109px;
+    max-width: 1000px;
 }
 section:nth-of-type(2) .wrapper .media-icon-wrapper {
    
